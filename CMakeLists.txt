@@ -2,11 +2,6 @@ cmake_minimum_required( VERSION 2.8 )
 
 project( elastix )
 
-# TODO Niels Dekker, August 2019: Quick and dirty fix to support building ITK from vcpkg, on azure (CI).
-link_directories(
-  C:/vcpkg/installed/x64-windows # For lib/double-conversion.lib
-)
-
 set(CMAKE_CXX_STANDARD 11)
 
 #---------------------------------------------------------------------
