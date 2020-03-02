@@ -139,6 +139,11 @@ else()
     Kernel/elxElastixMain.h
     ${InstallFilesForExecutables}
   )
+  add_executable( ElastixLibBasedExe
+     Main/ElastixLibBasedExe.cxx
+  )
+  target_link_libraries( ElastixLibBasedExe elastix )
+  target_compile_definitions(ElastixLibBasedExe PRIVATE ELX_CMAKE_VERSION="${CMAKE_VERSION}")
 endif()
 
 target_compile_definitions(elastix PRIVATE ELX_CMAKE_VERSION="${CMAKE_VERSION}")
