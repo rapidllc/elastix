@@ -5,8 +5,8 @@ add_executable(ElastixLibGTest
 target_link_libraries( ElastixLibGTest
   GTest::GTest
   GTest::Main
-  elastix
-  ${ITK_LIBRARIES}
+  elastix_lib
+   ${ITK_LIBRARIES}
 )
 
 if( ELASTIX_USE_OPENCL )
