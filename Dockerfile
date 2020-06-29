@@ -1,4 +1,4 @@
-FROM itk-base:latest
+FROM samhorvath/itk-base:latest
 MAINTAINER Sam Horvath <sam.horvath@kitware.com>
 
 COPY . /elastix
