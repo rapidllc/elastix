@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>Registration</category>
+  <title>Elastix</title>
+  <description><![CDATA[Runs the Elastix program.]]></description>
+  <version>0.0.1</version>
+  <documentation-url></documentation-url>
+  <license></license>
+  <contributor>Sam Horvath (Kitware Inc.)</contributor>
+  <acknowledgements></acknowledgements>
+  <parameters>
+    <label>Parameters</label>
+    <description><![CDATA[Study parameters]]></description>
+    <string-enumeration>
+      <name>priority</name>
+      <label>Processing Priority</label>
+      <description>set the process priority to high, abovenormal, normal (default), belownormal, or idle (Windows only option)</description>
+      <longflag>--priority</longflag>
+      <default>normal</default>
+      <element>high</element>
+      <element>abovenormal</element>
+      <element>normal</element>
+      <element>belownormal</element>
+      <element>idle</element>
+    </string-enumeration>
+    <boolean>
+      <name>extended_version</name>
+      <label>extended version </label>
+      <description>output extended version information and exit</description>
+      <longflag>--extended_version</longflag>
+      <default>false</default>
+    </boolean>
+    <integer>
+      <name>threads</name>
+      <label>Number Of Threads</label>
+      <description>set the maximum number of threads of elastix.</description>
+      <longflag>--threads</longflag>
+      <default>1</default>      
+    </integer>
+    <image>
+      <name>f</name>
+      <label>Fixed image</label>
+      <description>Fixed image.</description>
+      <longflag>--f</longflag>
+    </image>
+    <image>
+      <name>m</name>
+      <label>Moving image</label>
+      <description>Moving image.</description>
+      <longflag>--m</longflag>
+    </image> 
+    <directory>
+      <name>out</name>
+      <label>Output directory</label>
+      <description>Output directory.</description>
+      <longflag>--out</longflag>
+    </directory>  
+    <file>
+      <name>p</name>
+      <label>Parameter file</label>
+      <description>Parameter file.</description>
+      <longflag>--p</longflag>
+    </file>  
+    <image>
+      <name>mMask</name>
+      <label>Moving image mask</label>
+      <description>Moving image mask.</description>
+      <longflag>--mMask</longflag>
+    </image> 
+    <image>
+      <name>fMask</name>
+      <label>Fixed image mask</label>
+      <description>Fixed image mask.</description>
+      <longflag>--fMask</longflag>
+    </image> 
+    <file>
+      <name>t0</name>
+      <label>Initial transform file</label>
+      <description>Initial transform file.</description>
+      <longflag>--t0</longflag>
+    </file>   
+  </parameters>    
+</executable>

@@ -11,3 +11,9 @@ RUN cmake \
   /elastix
 
 RUN make
+
+RUN pip install ctk-cli
+
+WORKDIR /elastix/DockerPythonCLI
+
+ENTRYPOINT ["python", "./cli_list.py"]
